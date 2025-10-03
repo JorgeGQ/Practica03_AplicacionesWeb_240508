@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Imagenes/bwu-icon.ico">
+    <title>Cancionero   -   MATRICULA: 240508   Te gustaria ver tu cancion favorita?</title>
+</head>
+<body>
+    <h2>FORMULARIO DE SOLICITUD DE NUEVA CANCIÓN</h2>
+    <hr>
+    <form>
+        <fieldset>
+        <br>
+            <legend>Dato de la cancion</legend>
+            <br>
+            <label for="nombreCancion">Nombre de la cancion</label>
+            <input type="text"  name="nombreCancion" id="nombreCancion" size="50" required placeholder="Por favor ingresa el nombre de la cancion">
+            <br></br>
+            <label for="autoresCancion">Autor (es)</label>
+            <input type="text" name="autoresCancion" id="autoresCancion" size="80"
+            required placeholder="Ingresa el autoro autores con su nombre completo y separados por una coma(,)">
+            <br></br>
+            <label for="interpreteCancion">Interprete</label>
+            <input type="text" name="interpreteCancion" id="interpreteCancion" size="50" required
+            placeholder="Cantante, Solista o Grupo Musical que interpreta la cancion...">
+            <br>
+            <br>
+            <label>Escoge el (los) generos al que pertenece</label>
+        
+            <select multiple>
+                <option>Clasica</option>
+                <option>Electonica</option>
+                <option>Hip Hop</option>
+                <option>Instrumental</option>
+                <option>Jazz</option>
+                <option>Pop</option>
+                <optgroup label="Latina">
+                    <option>Reggae</option>
+                    <option>Reggaeton</option>
+                    <option>Trap</option>
+                    <option>Salsa</option>
+                    <option>Ranchera</option>
+                </optgroup >
+                <optgroup label="Regional">
+                    <option>Corridos</option>
+                    <option>Huapango</option>
+                    <option>Mariachi</option>
+                    <option>Ranchera</option>
+                </optgroup >
+                <optgroup label="Rock">
+                    <option>Alternativo</option>
+                    <option>Grunge</option>
+                    <option>Britpop</option>
+                    <option>Heavy Metal</option>
+                    <option>Indie</option>
+                    <option>Punk</option>
+                </optgroup >
+            </select>
+            <br>
+            <br>
+            <label for="contenidoSugestivo"><i>Contenido Sugestivo(Palabras altisonantes, doble sentido, frases alusivas, sexistas o de consumo de estupefaciantes)
+                <input type="checkbox" id="contenidoSugestivo" name="contenidoSugestivo"></i>
+            </label>
+            <h3>Letra de la Cancion</h3>
+            <textarea cols="150" rows="10" style="resize:none;  text-align:center;"></textarea>
+            <h3>Multimedia:</h3>
+            <label for="audioCancion">Archivo del audio</label>
+            <input type="file" id="audioCancion" name="audioCancion"
+            accept=".mp3, .wav, .midi, .acc, .wna, .flac">
+            <br>
+            <br>
+            <label for="videoCancion">Archivo de video</label>
+            <input type="file" id="videoCancion" name="videoCancion"
+            accept=".mp4, .avi, .webm, .mov, .mkv, .flv, .wmv">
+            <br>
+            <br>
+            <label for="portadaCancion">Portada Cancion</label>
+            <input type="file" id="portadaCancion" name="portadaCancion"
+            accept=".jpg, .jpeg, .bmp, .png">
+            <br>
+            <br>
+            <input type="submit" value="Registrar Cancion"
+        </fieldset>
+    </form>
+</body>
+</html>
